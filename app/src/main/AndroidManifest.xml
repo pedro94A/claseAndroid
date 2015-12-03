@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leassy.studiodd.myapplication" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name" >
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>-->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.FrasesActivity"
+            android:label="@string/title_activity_frases"
+            android:parentActivityName=".Activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.SegnalesActivity"
+            android:label="@string/title_activity_segnales"
+            android:parentActivityName=".Activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.CategoriasActivity"
+            android:label="@string/title_activity_categorias"
+            android:parentActivityName=".Activities.FrasesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.FrasesActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.FraseActyvityD"
+            android:label="@string/title_activity_frase_actyvity_d"
+            android:parentActivityName=".Activities.CategoriasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.CategoriasActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.ContenidoFrasesActivity"
+            android:label="@string/title_activity_contenido_frases"
+            android:parentActivityName=".Activities.FraseActyvityD" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.FraseActyvityD" />
+        </activity>
+        <activity
+            android:name=".Activities.SsaActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
